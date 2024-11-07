@@ -6,6 +6,8 @@ This project is an automated ETL pipeline that extracts, transforms, and loads (
 
 The pipeline fetches FDA food recall data for the previous month through the FDA's [OpenFDA API](https://api.fda.gov/food/enforcement.json) and loads it into an Elasticsearch index (`fda_recalls`). This data is then visualized and monitored in Kibana. The project is configured to run automatically on the first day of each month.
 
+Below is an image of the Kibana dashboard that visualizes the food recall data:
+
 ![Kibana Dashboard Image](./kibana-dashboard-image.png)
 
 ## Configuration Details ⚙️
