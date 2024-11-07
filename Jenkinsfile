@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/aakshatha02/CICD-ETL-Pipeline.git'
+                git branch: 'main', url: 'https://github.com/aakshatha02/automated-etl-with-elk.git'
             }
         }
         stage('Set Date for API call') {
