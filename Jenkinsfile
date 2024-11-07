@@ -19,7 +19,7 @@ pipeline {
                 }
             }
         }
-        stage('Stop Docker Containers before starting') {
+        stage('Stop any running Containers to avoid conflicts') {
             steps {
                 sh 'docker-compose down'
             }
@@ -28,7 +28,6 @@ pipeline {
         stage('Start Docker Containers') {
             steps {
                 script {
-                    // Start Docker containers
                     sh 'docker-compose up -d'
    
                 }
